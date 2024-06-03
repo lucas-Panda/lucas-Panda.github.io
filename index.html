@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Loja de roupas</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">Bella<span>Moda</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Vestidos">Produtos</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Rodapé">Contatos</a></li>
+                    <li><a href="Conta-Login.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="Carrinho.html"><i class="bi bi-cart2"></i></a>
+                <i class="bi bi-list" id="menubotão"></i>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <H2>Bem-vinda à Bella Moda!</H2>
+                    <p>
+                        Na Bella Moda, você encontra peças elegantes e modernas que valorizam sua beleza e estilo. 
+                        Nossa coleção é cuidadosamente selecionada para oferecer o melhor da moda feminina, 
+                        com atendimento personalizado para você se sentir única em qualquer ocasião. 
+                        Venha descobrir seu novo look favorito!
+                    </p>
+                    <button>Sobre &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="/img/Logo.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Conteudo Principal -->
+
+    <main>
+        <div class="fundodiferente">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <a href="#Vestidos"><img src="/img/Vestido azul.png" class="FotosCategorias"></a>
+                    <a href="#Blusas" class="foto2"><img src="/img/Blusa_rosa-removebg-preview.png" class="FotosCategorias"></a>
+                    <a href="#Calças" class="foto3" ><img src="/img/Calça.png" class="FotosCategorias"></a>
+                    <a href="#Saias"><img src="/img/saia-infantil-feminino-laco-mescla-brincar-e-arte-14987-Photoroom.png-Photoroom.png" class="FotosCategorias"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Vestidos"><br>
+            <div class="page-inner-content">
+                <h3 class="section-title">Produtos</h3>
+                <div class="subtitle-underline"></div>
+                <a href="Vestidos.html" class="title-link" style="text-decoration: none;"><h4 class="Nome-linha">Vestidos &#8594;</h4></a>
+                
+                <div class="linhaa"></div>
+
+                <div class="cols cols-4">
+                        <div class="produtos" data-name="Vestido Floral" data-price="25">
+                            <a href="perfil.html">
+                                <img class="produtos_img"  src="https://1359028l.ha.azioncdn.net/img/2023/09/produto/51521/vestido-infantil-feminino-malha-poliester-flowers-menina-doce.jpg?ims=fit-in/475x650/filters:fill(white)" data-name="Vestido Floral" data-price="25" alt="">
+                            </a>
+                            <p class="produtos-name" id="nome" >Vestido Floral</p>
+                            <p id="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                            <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                        </div>
+                   
+                    <div class="produtos" data-name="vestido rosa pandinha" data-price="25">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://4949028l.ha.azioncdn.net/img/2021/11/produto/5703/1-2817-vestido-infantil-menina-em-meia-malha-bem-vestir.jpg?ims=fit-in/630x945/filters:fill(white)" data-name="Vestido rosa pandinha" data-price="25"  alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Vestido rosa pandinha</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                        <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Vestido azul" data-price="25">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://a-static.mlcdn.com.br/450x450/vestido-infantil-ceu-azul-simples-menina-bonita-festa-luxo-jl-kids/jlkidsfestasbatizados/16023373828/fbbb0da7d9fd31044e3e15c295b4acba.jpeg" data-name="Vestido azul" data-price="25" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Vestido azul</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                        <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Vestido Vermelho" data-price="25">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://cdn.awsli.com.br/600x700/494/494448/produto/238089802/vestidoinfantil-vermelho-vestidodeluxo-vestidoclassico-vestidoexclusivo-bfl4ke0l3w.jpeg" style="margin-top: 1rem;" data-name="Vestido Vermelho" data-price="25" alt="">
+                        </a>
+                        <p class="produtos-name" style="margin-top: 2rem;" id="nome" >Vestido Vermelho</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                        <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Blusas"><br><br>
+            <div class="page-inner-content">
+                <a href="Blusas.html" class="title-link" style="text-decoration: none;"><h4 class="Nome-linha">Blusas &#8594;</h4></a>
+                <div class="linhaa"></div>
+
+                <div class="cols cols-4">
+                    <div class="produtos" data-name="Blusa Vermelha" data-price="35">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://static.dafiti.com.br/p/Milon-Blusa-Manga-Curta-Milon-Lisa-Infantil-Vermelha-7279-9679512-1-zoom.jpg" data-name="Blusa Vermelha" data-price="35" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Blusa Vermelha</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 35,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Blusa de Frio Preta" data-price="30">
+                        <a href="perfil.html">
+                        <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/748249/blusa_infantil_feminina_milon_em_cotton_na_cor_preta_16203_1_6e8ed599fcd53ca5af75a0db6bfd5e1e.jpg" data-name="Blusa de Frio Preta" data-price="30" style="margin-top: 2rem;" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" style="margin-top: 2rem;" >Blusa de Frio Preta</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 30,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Blusa rosa" data-price="40">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://bbbkids.vteximg.com.br/arquivos/ids/175060-1000-1000/BBB-3941-rosa.jpg?v=637062454707670000" data-name="Blusa rosa" data-price="40"  style="margin-top: 2rem;" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Blusa rosa</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 40,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Kit 3 blusas" data-price="105">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/586374/blusa_infantil_feminina_kit_3_verao_listras_cinza_malwee_4258_1_849061927dd98eb7ed7f54fa1694db2f.jpg" data-name="Kit 3 blusas" data-price="105" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Kit 3 blusas</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 105,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Calças"><br><br>
+            <div class="page-inner-content">
+                <a href="Calças.html" class="title-link" style="text-decoration: none;"><h4 class="Nome-linha">Calças &#8594;</h4></a>
+                <div class="linhaa"></div>
+
+                <div class="cols cols-4">
+                    <div class="produtos" data-name="Calça jeans Clara" data-price="75">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://cdn.awsli.com.br/545/545706/produto/151369074/79bbbf6990.jpg" data-name="Calça jeans Clara" data-price="75" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Calça jeans Clara</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 75,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Calça moletom Rosa" data-price="80">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/748249/calca_jogger_infantil_feminina_mania_kids_na_cor_rosa_10151_1_c95c262c6259e819e15a9929838f2f84.jpg" data-name="Calça moletom Rosa" data-price="80" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Calça moletom Rosa</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 80,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Calça moletom Preta" data-price="65">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/586374/calca_de_moletom_infantil_flanelada_preta_malwee_3670_1_0fca654dd0d1918e1f0a599077f32c37.jpg" data-name="Calça moletom Preta" data-price="65" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Calça moletom Preta</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 65,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Calça jeans escuro" data-price="50">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/996710/calca_infantil_feminina_malwee_em_jeans_denim_26313_1_aadabd7795ce5b21caa1104cba27ef5e.png" data-name="Calça jeans escuro" data-price="50" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Calça jeans escuro</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 50,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="Saias"><br><br>
+            <div class="page-inner-content">
+                <a href="Saias.html" class="title-link" style="text-decoration: none;"><h4 class="Nome-linha">Saias &#8594;</h4></a>
+                <div class="linhaa"></div>
+
+                <div class="cols cols-4">
+                    <div class="produtos" data-name="Kit 3 Saias" data-price="100">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://down-br.img.susercontent.com/file/03c24a8815890cda8bebc61a567f5dab" data-name="Kit 3 Saias" data-price="100" height="120%" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" style="margin-top: 4rem;" >Kit 3 Saias</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 100,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Saia Rosa Bebe" data-price="55">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://cdn.awsli.com.br/600x450/1327/1327947/produto/190262827/4ba36a7f36.jpg" data-name="Saia Rosa Bebe" data-price="55" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Saia Rosa Bebe</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 55,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Saia Azul" data-price="45">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://global.cdn.magazord.com.br/bituah/img/2022/08/produto/357/sf001-1-saia-infantil-menina.jpg" data-name="Saia Azul" data-price="45" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Saia Azul</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 45,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Saia Jeans" data-price="25">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://missako.vtexassets.com/arquivos/ids/251095-800-auto?v=637995342469600000&width=800&height=auto&aspect=true" data-name="Saia Jeans" data-price="25" style="margin-top: 2rem;" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" style="margin-top: 4rem;" >Saia Jeans</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="Sobre-inner-content" id="Sobre">
+        <div class="Sobre-bottom-side">
+            <div class="Sobre-bottom-side-left">
+                <H2>Quem é a Bella Moda?</H2>
+                <p>
+                    Na BellaModa, vestimos sonhos! Há 20 anos, somos especialistas em moda infantil feminina, 
+                    oferecendo roupas cheias de estilo e conforto para as pequenas princesas. 
+                    Nossas coleções são desenhadas com amor, pensando no bem-estar e na alegria das crianças. <br> <br>
+                    Aqui, cada peça é única, feita com materiais de alta qualidade e um toque de magia. 
+                    Queremos que suas meninas se sintam especiais em cada momento, seja brincando, aprendendo ou explorando. <br><br>
+                    Escolha BellaModa e traga mais cor e diversão para o guarda-roupa das suas pequenas.
+                </p>
+            </div>
+            <div class="Sobre-bottom-side-right">
+                <img src="/img/Logo.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    
+    <footer id="Rodapé">
+        <div class="Rodapé-content">
+            <div class="Rodapé-interior">
+                <div class="Rodapé1">
+                    <h2>Navegação</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#Vestidos">Produtos</a></li>
+                            <li><a href="#Sobre">Sobre</a></li>
+                            <li><a href="#">Contatos</a></li>
+                            <li><a href="#">Conta</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="Rodapé2">
+                    <h2> Contatos </h2>
+                    <span><i class="bi bi-telephone"></i>(24)992707070</span>
+                    <span><i class="bi bi-envelope">BellaModa@gmail.com</i></span>
+                </div>
+                <div class="Rodapé3">
+                    <h2>Informação Legal</h2>
+                    <h3>Criador</h3>
+                    <span><i class="bi bi-person"></i>Lucas Pinheiro Mandaro</span>
+                    <div>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/AddItens.js"></script>
+    <script src="scripts/addcarrinho.js"></script>
+    <script src="Main.js"></script>
+    <script src="scripts/Perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style-SEPARADO.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+            <!-- Barra superior -->
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">Bella<span>Moda</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#Vestidos">Produtos</a></li>
+                    <li><a href="index.html#Sobre">Sobre</a></li>
+                    <li><a href="index.html#Rodapé">Contatos</a></li>
+                    <li><a href="#">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="Carrinho.html"><i class="bi bi-cart2"></i></a>
+                <i class="bi bi-list" id="menubotão"></i>
+            </div>
+        </div>
+    </div>
+
+
+           <!-- Adicionar Itens -->
+
+           <button id="openModalBtn"><i class="bi bi-plus-circle-fill"></i></button>
+
+           <div id="myModal" class="modal">
+               <div class="modal-content">
+                   <span class="close">&times;</span>
+                   <form id="divForm">
+                       <label for="title">Título:</label><br>
+                       <input type="text" id="title" name="title" required><br>
+                       <label for="imageFile">Imagem:</label><br>
+                       <input type="file" id="imageFile" name="imageFile" accept="image/*" required><br>
+                       <label for="dataName">Data Name:</label><br>
+                       <input type="text" id="dataName" name="dataName" required><br>
+                       <label for="dataPrice">Data Price:</label><br>
+                       <input type="text" id="dataPrice" name="dataPrice" required><br>
+                       <button type="submit" id="addDivButton" >Adicionar Div</button>
+                   </form>
+               </div>
+           </div>
+           
+        <!------------------------------------------------------------------------------------------------->
+
+        <div id="Blusas"><br><br>
+            <div class="page-inner-content">
+                <h4 class="Nome-linha">Blusas &#8594;</h4>
+                <div class="linhaa"></div>
+
+                <div class="cols cols-4">
+                    <div class="produtos" data-name="Blusa Vermelha" data-price="35">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://static.dafiti.com.br/p/Milon-Blusa-Manga-Curta-Milon-Lisa-Infantil-Vermelha-7279-9679512-1-zoom.jpg" data-name="Blusa Vermelha" data-price="35" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Blusa Vermelha</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 35,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Blusa de Frio Preta" data-price="30">
+                        <a href="perfil.html">
+                        <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/748249/blusa_infantil_feminina_milon_em_cotton_na_cor_preta_16203_1_6e8ed599fcd53ca5af75a0db6bfd5e1e.jpg" data-name="Blusa de Frio Preta" data-price="30" style="margin-top: 2rem;" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" style="margin-top: 2rem;" >Blusa de Frio Preta</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 30,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Blusa rosa" data-price="40">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://bbbkids.vteximg.com.br/arquivos/ids/175060-1000-1000/BBB-3941-rosa.jpg?v=637062454707670000" data-name="Blusa rosa" data-price="40"  style="margin-top: 2rem;" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Blusa rosa</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 40,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div class="produtos" data-name="Kit 3 blusas" data-price="105">
+                        <a href="perfil.html">
+                            <img class="produtos_img" src="https://images.tcdn.com.br/img/img_prod/586374/blusa_infantil_feminina_kit_3_verao_listras_cinza_malwee_4258_1_849061927dd98eb7ed7f54fa1694db2f.jpg" data-name="Kit 3 blusas" data-price="105" alt="">
+                        </a>
+                        <p class="produtos-name" id="nome" >Kit 3 blusas</p>
+                        <p class="valor" style="margin-top: 1rem;">R$ 105,00</p>
+                        <button class="add-to-cart" style="margin-top: 2rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                    </div>
+                    <div id="container"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+    <script src="scripts/AddItens.js"></script>
+    <script src="scripts/addcarrinho.js"></script>
+    <script src="scripts/Perfil.js"></script>
+    <script src="Main.js"></script>
+</body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style-SEPARADO.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+            <!-- Barra superior -->
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">Bella<span>Moda</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#Vestidos">Produtos</a></li>
+                    <li><a href="index.html#Sobre">Sobre</a></li>
+                    <li><a href="index.html#Rodapé">Contatos</a></li>
+                    <li><a href="#">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="Carrinho.html"><i class="bi bi-cart2"></i></a>
+                <i class="bi bi-list" id="menubotão"></i>
+            </div>
+        </div>
+    </div>
+
+
+           <!-- Adicionar Itens -->
+
+           <button id="openModalBtn"><i class="bi bi-plus-circle-fill"></i></button>
+
+           <div id="myModal" class="modal">
+               <div class="modal-content">
+                   <span class="close">&times;</span>
+                   <form id="divForm">
+                       <label for="title">Título:</label><br>
+                       <input type="text" id="title" name="title" required><br>
+                       <label for="imageFile">Imagem:</label><br>
+                       <input type="file" id="imageFile" name="imageFile" accept="image/*" required><br>
+                       <label for="dataName">Data Name:</label><br>
+                       <input type="text" id="dataName" name="dataName" required><br>
+                       <label for="dataPrice">Data Price:</label><br>
+                       <input type="text" id="dataPrice" name="dataPrice" required><br>
+                       <button type="submit" id="addDivButton" >Adicionar Div</button>
+                   </form>
+               </div>
+           </div>
+
+        <!------------------------------------------------------------------------------------------------->
+
+            <!-- Itens -->
+    <div id="Vestidos"><br>
+        <div class="page-inner-content">
+            <h4 class="Nome-linha">Vestidos &#8594;</h4>
+            <div class="linhaa"></div>
+
+            <div class="cols cols-4">
+                <div class="produtos" data-name="Vestido Floral" data-price="25">
+                    <a href="perfil.html">
+                        <img class="produtos_img"  src="https://1359028l.ha.azioncdn.net/img/2023/09/produto/51521/vestido-infantil-feminino-malha-poliester-flowers-menina-doce.jpg?ims=fit-in/475x650/filters:fill(white)" data-name="Vestido Floral" data-price="25" alt="">
+                    </a>
+                    <p class="produtos-name" id="nome" >Vestido Floral</p>
+                    <p id="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                    <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+                </div>
+           
+            <div class="produtos" data-name="vestido rosa pandinha" data-price="25">
+                <a href="perfil.html">
+                    <img class="produtos_img" src="https://4949028l.ha.azioncdn.net/img/2021/11/produto/5703/1-2817-vestido-infantil-menina-em-meia-malha-bem-vestir.jpg?ims=fit-in/630x945/filters:fill(white)" data-name="Vestido rosa pandinha" data-price="25"  alt="">
+                </a>
+                <p class="produtos-name" id="nome" >Vestido rosa pandinha</p>
+                <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+            </div>
+            <div class="produtos" data-name="Vestido azul" data-price="25">
+                <a href="perfil.html">
+                    <img class="produtos_img" src="https://a-static.mlcdn.com.br/450x450/vestido-infantil-ceu-azul-simples-menina-bonita-festa-luxo-jl-kids/jlkidsfestasbatizados/16023373828/fbbb0da7d9fd31044e3e15c295b4acba.jpeg" data-name="Vestido azul" data-price="25" alt="">
+                </a>
+                <p class="produtos-name" id="nome" >Vestido azul</p>
+                <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+            </div>
+            <div class="produtos" data-name="Vestido Vermelho" data-price="25">
+                <a href="perfil.html">
+                    <img class="produtos_img" src="https://cdn.awsli.com.br/600x700/494/494448/produto/238089802/vestidoinfantil-vermelho-vestidodeluxo-vestidoclassico-vestidoexclusivo-bfl4ke0l3w.jpeg" style="margin-top: 1rem;" data-name="Vestido Vermelho" data-price="25" alt="">
+                </a>
+                <p class="produtos-name" style="margin-top: 2rem;" id="nome" >Vestido Vermelho</p>
+                <p class="valor" style="margin-top: 1rem;">R$ 25,00</p>
+                <button class="add-to-cart" style="margin-top: 1rem" >Adicionar ao Carrinho<br><i class="bi bi-cart2" id="ButtonCart"></i></button>
+            </div>
+                <div id="container"></div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+
+     
+
+    <!-- Scripts -->
+    <script src="scripts/AddItens.js"></script>
+    <script src="scripts/addcarrinho.js"></script>
+    <script src="scripts/Perfil.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>
