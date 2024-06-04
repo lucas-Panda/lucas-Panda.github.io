@@ -11,9 +11,10 @@ window.addEventListener('click', function(event) {
         document.getElementById('myModal').style.display = "none";
     }
 });
-
+// Impede o envio do formulário e o recarregamento da página
 document.getElementById('divForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário e o recarregamento da página
+    event.preventDefault(); 
+//-------------------------------------------------------------------
 
     // Obtém os valores dos campos de entrada
     var title = document.getElementById('title').value;
@@ -30,27 +31,33 @@ document.getElementById('divForm').addEventListener('submit', function(event) {
             newDiv.classList.add('produtos');
             newDiv.setAttribute('data-name', dataName); 
             newDiv.setAttribute('data-price', dataPrice);
+            //------------------------------------------------
 
-            // Cria um elemento de título e define seu conteúdo
+            // Cria um título e define seu conteúdo
             var newTitle = document.createElement('h2');
             newTitle.textContent = title;
+            //-------------------------------------------------
 
-            // Cria um elemento de imagem e define seu src
+            // Cria o elemento da imagem e define seu src
             var newImage = document.createElement('img');
             newImage.src = e.target.result;
+            //------------------------------------------------
 
             var buttonContainer = document.createElement('div');
             buttonContainer.classList.add('button-container');
 
+
+            // Função para mudar a cor do botão de carrinho
             function toggleColor(button) {
                 button.addEventListener('click', function() {
                     if (button.style.backgroundColor === 'blue') {
-                        button.style.backgroundColor = ''; // Cor padrão
+                        button.style.backgroundColor = '';
                     } else {
-                        button.style.backgroundColor = 'blue'; // Cor clicada
+                        button.style.backgroundColor = 'blue';
                     }
                 });
             }
+            //---------------------------------------------------
 
             var button1 = document.createElement('button');
             button1.textContent = 'Adicionar ao Carrinho';
@@ -63,15 +70,19 @@ document.getElementById('divForm').addEventListener('submit', function(event) {
             newDiv.appendChild(newImage);
             newDiv.appendChild(newTitle);
             newDiv.appendChild(buttonContainer);
+            //---------------------------------------------------
 
-            // Adiciona a nova div ao container existente
+            // Adiciona a nova div ao container 
             document.getElementById('container').appendChild(newDiv);
+            //---------------------------------------------------
 
             // Fecha o modal
             document.getElementById('myModal').style.display = "none";
+            //---------------------------------------------------
 
             // Limpa os campos do formulário
             document.getElementById('divForm').reset();
+            //---------------------------------------------------
         }
         reader.readAsDataURL(imageFile);
     }
