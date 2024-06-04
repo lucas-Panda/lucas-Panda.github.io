@@ -1,18 +1,21 @@
-// Configura o botão para limpar o carrinho
+// botão de limpar o carrinho
 document.getElementById('clear-cart').addEventListener('click', limparCarrinho);
+//--------------------------------------------------------------------------------
 
-// Lista de tamanhos disponíveis (pode ser personalizada conforme necessário)
+// Lista de tamanhos 
 const tamanhosDisponiveis = ['P', 'M', 'G', 'GG'];
+//---------------------------------------------------
 
-// Função para carregar os itens do carrinho do localStorage
+// Função para carregar os itens
 function carregarCarrinho() {
     var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     var carrinhoElemento = document.getElementById('carrinho');
-    carrinhoElemento.innerHTML = ''; // Limpa o conteúdo atual
+    carrinhoElemento.innerHTML = '';
     var total = 0;
     var itemCounts = {};
+    //---------------------------------------------------
 
-    // Agrupa itens semelhantes
+    // somar os itens iguais
     carrinho.forEach(function(item) {
         if (itemCounts[item.name]) {
             itemCounts[item.name].quantity += 1;
@@ -20,9 +23,10 @@ function carregarCarrinho() {
             itemCounts[item.name] = { ...item, quantity: 1 };
         }
     });
+    //---------------------------------------------------
 
 
-// Adiciona cada item ao elemento do carrinho e calcula o total
+// Bota no carrinho e soma
 Object.values(itemCounts).forEach(function(item) {
     var listItem = document.createElement('li');
     listItem.innerHTML = `
@@ -34,16 +38,18 @@ Object.values(itemCounts).forEach(function(item) {
         </select>
     `;
     carrinhoElemento.appendChild(listItem);
-    total += parseFloat(item.price) * item.quantity; // Adiciona o preço do item ao total
+    total += parseFloat(item.price) * item.quantity;
 });
+//--------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Adiciona o total ao elemento do carrinho
+// mostra o total 
 var totalElemento = document.createElement('li');
 totalElemento.textContent = `Total: R$ ${total.toFixed(2)}`; // Formata o total para 2 casas decimais
 carrinhoElemento.appendChild(totalElemento);
+//---------------------------------------------------
 
 
-    // Adiciona evento para atualizar a quantidade
+    // evento que atualiza a quantidade
     document.querySelectorAll('#carrinho input[type="number"]').forEach(function(input) {
         input.addEventListener('change', function() {
             var name = this.getAttribute('data-name');
@@ -51,10 +57,11 @@ carrinhoElemento.appendChild(totalElemento);
             atualizarQuantidade(name, newQuantity);
         });
     });
+    //---------------------------------------------------------------------------------------
 
 }
 
-// Função para atualizar a quantidade de um item no carrinho
+// Função que atualiza a quantidade de um item 
 function atualizarQuantidade(name, newQuantity) {
     var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     carrinho = carrinho.filter(item => item.name !== name); // Remove todos os itens com esse nome
@@ -65,15 +72,18 @@ function atualizarQuantidade(name, newQuantity) {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     carregarCarrinho();
 }
+//------------------------------------------------------------------------------------------------
 
 
-// Função para limpar o carrinho
+// limpar o carrinho
 function limparCarrinho() {
     localStorage.removeItem('carrinho');
     carregarCarrinho();
 }
+//---------------------------------------
 
-// Carrega o carrinho quando a página é carregada
+// Carrega o carrinho 
 document.addEventListener('DOMContentLoaded', function() {
     carregarCarrinho();
 });
+//-------------------------------------------------------------
